@@ -42,6 +42,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },
+  "packageManager": "^pnpm@8.12.1",
   "readme": "https://github.com/stilt0n/stranger-danger-app/blob/master/README.md",
   "_id": "app@0.0.0"
 }
