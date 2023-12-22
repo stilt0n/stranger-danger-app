@@ -12,6 +12,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Get pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Install dependencies with pnpm
         run: pnpm install
 
