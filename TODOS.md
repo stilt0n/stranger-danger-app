@@ -6,7 +6,7 @@
 - Create login page
 - Create home page
 - Create header (and maybe footer?)
-- Add routing
+- Add routing and create App component
 
 ## Improvements
 

@@ -1,3 +1,3 @@
-# About
+# Stranger Danger
 
-The front end for a chat app for talking with strangers
+I thought it would be fun to make a chat app in honor of the now dead Omegle. This is the repo for the front-end of that app. This is not intended to recreate the original site.
