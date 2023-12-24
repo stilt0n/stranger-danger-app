@@ -6,6 +6,7 @@ export interface Message {
 
 export interface ChatMessageProps {
   message: Message;
+  userName: string;
 }
 
 // This feature might actually end up being annoying
@@ -23,11 +24,11 @@ const getPostedAtTooltip = (date: Date | undefined) => {
   }
 };
 
-export const ChatMessage = ({ message }: ChatMessageProps) => (
-  <p
-    className="hover:bg-gray-200 w-full"
-    title={getPostedAtTooltip(message.postedAt)}
-  >
-    {message.text}
-  </p>
-);
+export const ChatMessage = ({ message, userName }: ChatMessageProps) => {
+  return (
+    <div className="hover:bg-gray-200 w-full">
+      <p className="tex-grey-600 text-xs">{userName}</p>
+      <p title={getPostedAtTooltip(message.postedAt)}>{message.text}</p>
+    </div>
+  );
+};

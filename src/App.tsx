@@ -1,5 +1,10 @@
-const App = () => {
-  return <h1 className="text-3xl font-bold underline">App</h1>;
-};
+import { Chat } from "./components/Chat";
+import { UserProvider } from "./contexts/UserContext";
+
+const App = () => (
+  <UserProvider>
+    <Chat className="h-screen mx-32 py-16" />
+  </UserProvider>
+);
 
 export default App;

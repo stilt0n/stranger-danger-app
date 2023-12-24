@@ -19,6 +19,7 @@ const postedAt = new Date();
 export const Basic: Story = {
   args: {
     message: { text: shortMessage, postedAt, id: 0 },
+    userName: "foo",
   },
 };
 
@@ -26,12 +27,14 @@ export const Basic: Story = {
 export const TallMessage: Story = {
   args: {
     message: { text: tallMessage, postedAt, id: 1 },
+    userName: "foo",
   },
 };
 
 export const LongMessage: Story = {
   args: {
     message: { text: superLongMessage, postedAt, id: 2 },
+    userName: "foo",
   },
 };
 
